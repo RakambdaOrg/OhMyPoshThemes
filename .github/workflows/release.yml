@@ -1,0 +1,15 @@
+name: Release
+
+on:
+  release:
+    types: [ published ]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    uses: RakambdaOrg/rakambda-github-workflows/.github/workflows/zip-publish.yml@main
+    with:
+      filename: "themes.zip"
+      path: "themes"
