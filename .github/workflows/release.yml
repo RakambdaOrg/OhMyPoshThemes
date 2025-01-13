@@ -12,4 +12,5 @@ jobs:
     uses: RakambdaOrg/rakambda-github-workflows/.github/workflows/zip-publish.yml@main
     with:
       filename: "themes.zip"
-      path: "themes/*"
+      directory: "themes"
+      path: "."
